@@ -1,39 +1,40 @@
 @charset "utf-8";
-html{
+html {
     font-size: 100%;
 }
-body{
+body {
     color: #242922;
     font-family: "sawarabi Gothic";
 }
-a{
+a {
     text-decoration: none;
 }
-p{
+p {
     font-size: 1.3rem;
 }
-img{
+img {
     max-width: 100%;
 }
-li{
+li {
     list-style: none;
     font-size: 1.2rem;
 }
-.wrapper{
+.wrapper {
     max-width: 960px;
     margin: 0 auto 130px auto;
     font-size: 0.9rem;
     padding: 0 4%;
 }
-.site-title{
+.site-title {
     line-height: 1px;
     font-weight: 600;
     font-size: 2.4rem;
 }
-.site-title a{
+.site-title a {
     color:#24292e;
 }
-.sec-title{
+
+.sec-title {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 65px;
@@ -59,26 +60,27 @@ align-items: center;
 }
 
 #header li {
-font-size:0.9rem;
-margin-left:30px;
+font-size: 0.9rem;
+margin-left: 30px;
 }
+
 header li a {
 color: #24292e;
 transition:all 0.3s;
 }
-#header li a:hover{
+#header li a:hover {
     opacity: 0.5;
 }
 #header li img.icon {
-width:30px;
+width: 30px;
 }
 
 /* main */
-#mainvisul{
+#mainvisual{
     margin-bottom: 80px;
 }
 #mainvisual img{
-    width: 100;
+    width: 100%;
     max-width: 1920px;
     height: 400px;
     object-fit: cover;
@@ -89,39 +91,41 @@ width:30px;
  #about ul{
     margin-bottom: 30px;
  }
- #about ul li{
+ #about ul li {
     margin-bottom: 3px;
  }
  #about ul li:first-child{
     margin-bottom: 30px;
  }
- #about p{
+ #about p {
     text-align: justify;
  }
  
  /* --------------------
  works
  ----------------------- */
- #works ul{
+ #works ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 50px;
  }
- #works ul li{
+ #works ul li {
     width: 31%;
     margin-bottom: 23px;
  }
- #works ul li{
+ #works ul li img {
     cursor: pointer;
     width: 640px;
     max-height: 417px;
     transition: all 0.3s;
  }
  #works ul li img:hover{
-    transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2); 
+    transform: rotate(40);
     opacity: 0.7;
-    transform: rotate(180deg);
+
+
 }
 /* -----------------------
 news
@@ -145,11 +149,11 @@ news
 /*----------------------
 contact
 ----------------------*/
-#contact p{
+#contact p {
     text-align: center;
     margin-bottom: 20px;
 }
-#contact dl{
+#contact dl {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
@@ -173,7 +177,7 @@ width: 15%;
 #contact .button{
     text-align: center;
 }
-#contact button input{
+#contact .button input{
     border: solid 1px #24292e;
     width: 200px;
     background-color: #24292e;
@@ -181,14 +185,14 @@ width: 15%;
     padding: 15px 0;
     transition:  all 0.3s;
 }
-#contact button input:hover{
+#contact.button input:hover{
     background: #fff;
     color: #24292e;
 }
 
-@media screen and(max-width:600px) {
+@media screen and (max-width: 600px) {
     .site-title{
-        margin-top: 200px;
+        margin-top: 20px;
     }
     .sec-title{
         font-size: 1.5rem;
@@ -196,6 +200,7 @@ width: 15%;
         margin-bottom: 65px;
     }
     /* ヘッダー */
+
     #header{
         flex-direction: column;
         height: auto;
@@ -231,10 +236,16 @@ padding-bottom: 0;
     width: 100%;
     padding-top: 0;
 }
-#contant dt{
+
+/* comtant */
+
+#contant dl {
+    flex-direction: column;
+}
+#contact dt {
     width: 100%;
     margin-bottom: 5px;
 }
-#contant dd{
+#contact dd {
     width: 100%;
 }
